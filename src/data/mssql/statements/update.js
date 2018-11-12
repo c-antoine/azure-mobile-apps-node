@@ -9,7 +9,7 @@ var helpers = require('../helpers'),
 
 module.exports = function (table, item, query) {
     var tableName = helpers.formatTableName(table.schema || 'dbo', table.name),
-        pkName = 'id',
+        pkName = 'UID',
         setStatements = [],
         versionValue,
         parameters = [],
@@ -21,7 +21,7 @@ module.exports = function (table, item, query) {
 
             if (prop.toLowerCase() === 'version') {
                 versionValue = value;
-            } else if (prop.toLowerCase() !== 'id') {
+            } else if (prop.toLowerCase() !== 'UID') {
                 setStatements.push(helpers.formatMember(prop) + ' = @' + prop);
                 parameters.push({ name: prop, value: value, type: helpers.getMssqlType(value) });
             }
