@@ -4,6 +4,10 @@
 [![devDependency Status](https://david-dm.org/Azure/azure-mobile-apps-node/dev-status.svg)](https://david-dm.org/Azure/azure-mobile-apps-node#info=devDependencies)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Azure/azure-mobile-apps-node?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+# Fork made for my own Node plugin.
+Goal is to allow "ID" parameter modification && self-contained memory to stop worker-thread use, that have too much memory cost
+This plugin is used in my previous ionic application (privated-source) for MSSQL(desktop) <-> SQLite(app) data synchronisation
+
 # Azure Mobile Apps - Node SDK
 
 ## Basic Usage
